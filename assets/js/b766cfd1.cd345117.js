@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkprojeto_agendamento=globalThis.webpackChunkprojeto_agendamento||[]).push([[4176],{9208:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/projeto_agendamento/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

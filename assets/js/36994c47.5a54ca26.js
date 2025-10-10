@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkprojeto_agendamento=globalThis.webpackChunkprojeto_agendamento||[]).push([[9858],{5516:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"default"}')}}]);

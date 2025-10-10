@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkprojeto_agendamento=globalThis.webpackChunkprojeto_agendamento||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/projeto_agendamento/blog","blogTitle":"Blog","authorsListPath":"/projeto_agendamento/blog/authors"}')}}]);
