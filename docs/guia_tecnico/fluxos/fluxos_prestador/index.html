@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-guia_tecnico/fluxos/fluxos_prestador" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">Fluxos do Prestador | Projeto Agendamento</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://paula-zp.github.io/projeto_agendamento/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://paula-zp.github.io/projeto_agendamento/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_prestador"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Fluxos do Prestador | Projeto Agendamento"><meta data-rh="true" name="description" content="Estes fluxos descrevem as interações do prestador de serviços com o sistema de agendamentos."><meta data-rh="true" property="og:description" content="Estes fluxos descrevem as interações do prestador de serviços com o sistema de agendamentos."><link data-rh="true" rel="icon" href="/projeto_agendamento/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_prestador"><link data-rh="true" rel="alternate" href="https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_prestador" hreflang="en"><link data-rh="true" rel="alternate" href="https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_prestador" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guia Técnico","item":"https://paula-zp.github.io/projeto_agendamento/docs/category/guia-técnico"},{"@type":"ListItem","position":2,"name":"Fluxos","item":"https://paula-zp.github.io/projeto_agendamento/docs/category/fluxos"},{"@type":"ListItem","position":3,"name":"Fluxos do Prestador","item":"https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_prestador"}]}</script><link rel="alternate" type="application/rss+xml" href="/projeto_agendamento/blog/rss.xml" title="Projeto Agendamento RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/projeto_agendamento/blog/atom.xml" title="Projeto Agendamento Atom Feed"><link rel="stylesheet" href="/projeto_agendamento/assets/css/styles.665813eb.css">
+<script src="/projeto_agendamento/assets/js/runtime~main.50f5a564.js" defer="defer"></script>
+<script src="/projeto_agendamento/assets/js/main.620b6db7.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/projeto_agendamento/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/projeto_agendamento/"><div class="navbar__logo"><img src="/projeto_agendamento/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/projeto_agendamento/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Projeto Agendamento</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/projeto_agendamento/docs/intro">Tutorial</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/projeto_agendamento/docs/intro"><span title="Produto Agendamento" class="linkLabel_WmDU">Produto Agendamento</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/projeto_agendamento/docs/category/produto"><span title="Produto" class="categoryLinkLabel_W154">Produto</span></a><button aria-label="Expand sidebar category &#x27;Produto&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/projeto_agendamento/docs/category/arquitetura"><span title="Arquitetura" class="categoryLinkLabel_W154">Arquitetura</span></a><button aria-label="Expand sidebar category &#x27;Arquitetura&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/projeto_agendamento/docs/category/guia-técnico"><span title="Guia Técnico" class="categoryLinkLabel_W154">Guia Técnico</span></a><button aria-label="Collapse sidebar category &#x27;Guia Técnico&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/projeto_agendamento/docs/category/fluxos"><span title="Fluxos" class="categoryLinkLabel_W154">Fluxos</span></a><button aria-label="Collapse sidebar category &#x27;Fluxos&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/visao_geral_fluxos"><span title="Visão Geral dos Fluxos" class="linkLabel_WmDU">Visão Geral dos Fluxos</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_configuracao"><span title="Fluxos de Configuração" class="linkLabel_WmDU">Fluxos de Configuração</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_cliente"><span title="Fluxos do Cliente" class="linkLabel_WmDU">Fluxos do Cliente</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_prestador"><span title="Fluxos do Prestador" class="linkLabel_WmDU">Fluxos do Prestador</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_lembretes"><span title="Fluxos de Lembretes" class="linkLabel_WmDU">Fluxos de Lembretes</span></a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/projeto_agendamento/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/projeto_agendamento/docs/category/guia-técnico"><span>Guia Técnico</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/projeto_agendamento/docs/category/fluxos"><span>Fluxos</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Fluxos do Prestador</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Fluxos do Prestador</h1></header>
+<p>Estes fluxos descrevem as interações do prestador de serviços com o sistema de agendamentos.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-índice-de-fluxos">📑 Índice de Fluxos<a href="#-índice-de-fluxos" class="hash-link" aria-label="Direct link to 📑 Índice de Fluxos" title="Direct link to 📑 Índice de Fluxos" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxos-essenciais-mvp">Fluxos Essenciais (MVP)<a href="#fluxos-essenciais-mvp" class="hash-link" aria-label="Direct link to Fluxos Essenciais (MVP)" title="Direct link to Fluxos Essenciais (MVP)" translate="no">​</a></h3>
+<ol>
+<li><a href="#1-fluxo-de-rea%C3%A7%C3%A3o-r%C3%A1pida-via-whatsapp">Reação Rápida via WhatsApp</a> - Aceitar/rejeitar agendamento</li>
+<li><a href="#2-fluxo-de-justificativa-para-rejei%C3%A7%C3%A3o">Justificativa para Rejeição</a> - Motivo de recusa para agendamento</li>
+<li><a href="#3-fluxo-de-proposta-de-hor%C3%A1rio-alternativo">Proposta de Horário Alternativo</a> - Contraproposta de horário</li>
+<li><a href="#4-fluxo-de-expira%C3%A7%C3%A3o-e-escala%C3%A7%C3%A3o">Expiração e Escalação</a> - Sem resposta</li>
+<li><a href="#5-fluxo-de-delega%C3%A7%C3%A3otransfer%C3%AAncia">Delegação/Transferência</a> - Transferir atendimento de um profissional para outro</li>
+<li><a href="#6-fluxo-de-informa%C3%A7%C3%B5es-adicionais">Informações Adicionais</a> - Solicitar detalhes complementares do cliente</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxos-opcionais">Fluxos Opcionais<a href="#fluxos-opcionais" class="hash-link" aria-label="Direct link to Fluxos Opcionais" title="Direct link to Fluxos Opcionais" translate="no">​</a></h3>
+<ol start="7">
+<li><a href="#7-fluxo-de-aceite-parcial-para-m%C3%BAltiplos-servi%C3%A7os">Aceite Parcial (múltiplos serviços)</a> - Selecionar serviços para aceitar</li>
+<li><a href="#8-fluxo-de-notifica%C3%A7%C3%A3o-ao-estabelecimento">Notificação ao Estabelecimento</a> - Alerta de novos agendamentos</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fluxos-essenciais-mvp-1">Fluxos Essenciais (MVP)<a href="#fluxos-essenciais-mvp-1" class="hash-link" aria-label="Direct link to Fluxos Essenciais (MVP)" title="Direct link to Fluxos Essenciais (MVP)" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-fluxo-de-reação-rápida-via-whatsapp">1. Fluxo de Reação Rápida via WhatsApp<a href="#1-fluxo-de-reação-rápida-via-whatsapp" class="hash-link" aria-label="Direct link to 1. Fluxo de Reação Rápida via WhatsApp" title="Direct link to 1. Fluxo de Reação Rápida via WhatsApp" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Prestador de Serviço<br>
+<!-- -->Canal: WhatsApp<br>
+<!-- -->Frequência: Ao receber solicitação<br>
+<!-- -->Objetivo: Responder rapidamente</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-resposta-direta-por-botões-interativos">Título: Resposta Direta por Botões Interativos<a href="#título-resposta-direta-por-botões-interativos" class="hash-link" aria-label="Direct link to Título: Resposta Direta por Botões Interativos" title="Direct link to Título: Resposta Direta por Botões Interativos" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQRESPONDERREQUISICAO" src="/projeto_agendamento/assets/images/SEQ-ResponderRequisicao-db6c28797c8ea67e1dc6c2d7e5df9ada.png" width="5336" height="3620" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário">História de Usuário<a href="#história-de-usuário" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como prestador de serviço, quero responder diretamente às solicitações de agendamento através de botões interativos no WhatsApp, para que eu possa gerenciar minha agenda rapidamente sem precisar acessar interfaces externas.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência">Fluxo de uso (Diagrama de Sequência)<a href="#fluxo-de-uso-diagrama-de-sequência" class="hash-link" aria-label="Direct link to Fluxo de uso (Diagrama de Sequência)" title="Direct link to Fluxo de uso (Diagrama de Sequência)" translate="no">​</a></h4>
+<ol>
+<li>📅 Agenda &amp; Booking detecta novo agendamento pendente (state = &quot;pending&quot;)</li>
+<li>📅 Agenda &amp; Booking publica evento <code>booking.created</code> na 📨 Fila/EventBus</li>
+<li>📣 Notificações consome o evento da 📨 Fila/EventBus</li>
+<li>📣 Notificações solicita ao 🌐 API Gateway detalhes completos do agendamento (<code>GET /bookings/{id}</code>)</li>
+<li>📣 Notificações gera template de mensagem com botões interativos &quot;Aceitar&quot; e &quot;Rejeitar&quot;</li>
+<li>📣 Notificações envia notificação via ☁️ WhatsApp Provider para o telefone do 👥 Prestador</li>
+<li>👥 Prestador recebe mensagem com detalhes do agendamento e botões de ação</li>
+<li>👥 Prestador pressiona botão &quot;Aceitar&quot; ou &quot;Rejeitar&quot; diretamente no WhatsApp</li>
+<li>☁️ WhatsApp Provider envia webhook com a resposta para o 📥 Webhook Ingest</li>
+<li>📥 Webhook Ingest valida assinatura HMAC e processa a resposta</li>
+<li>📥 Webhook Ingest extrai identificador do agendamento e ação selecionada</li>
+<li>🌐 API Gateway envia <code>PATCH /bookings/{id}</code> com action=accept/reject e staff_id</li>
+<li>📅 Agenda &amp; Booking atualiza estado do agendamento no 🗄️ PostgreSQL</li>
+<li>📅 Agenda &amp; Booking emite evento <code>booking.accepted</code> ou <code>booking.rejected</code> na 📨 Fila/EventBus</li>
+<li>📣 Notificações envia confirmação ao 👥 Prestador: &quot;Agendamento [aceito/rejeitado] com sucesso&quot;</li>
+<li>📣 Notificações envia notificação ao 💬 Cliente sobre a decisão do prestador</li>
+<li>📅 Agenda &amp; Booking registra todas as interações no audit_log no 🗄️ PostgreSQL para rastreabilidade</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação">Critérios de Aceitação<a href="#critérios-de-aceitação" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir aceite ou rejeição do agendamento com apenas um clique no WhatsApp</li>
+<li>Deve garantir que apenas o prestador designado possa responder à notificação</li>
+<li>Deve processar respostas em tempo real (latência máxima de 3 segundos)</li>
+<li>Deve fornecer confirmação visual da ação realizada ao prestador</li>
+<li>Deve registrar metadados completos da interação (timestamp, dispositivo, ação)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done">Definition of Done<a href="#definition-of-done" class="hash-link" aria-label="Direct link to Definition of Done" title="Direct link to Definition of Done" translate="no">​</a></h4>
+<ul>
+<li>Implementação de templates de mensagem com botões interativos do WhatsApp</li>
+<li>Processamento de webhooks de resposta configurado e testado</li>
+<li>Validação de segurança para confirmar identidade do respondente</li>
+<li>Testes de concorrência para múltiplas respostas simultâneas</li>
+<li>Logs de auditoria implementados para todas as ações</li>
+<li>Monitoramento de taxa de resposta e tempo médio de resposta</li>
+<li>Documentação técnica dos templates e fluxo de resposta</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-fluxo-de-justificativa-para-rejeição">2. Fluxo de Justificativa para Rejeição<a href="#2-fluxo-de-justificativa-para-rejeição" class="hash-link" aria-label="Direct link to 2. Fluxo de Justificativa para Rejeição" title="Direct link to 2. Fluxo de Justificativa para Rejeição" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Prestador de Serviço<br>
+<!-- -->Canal: WhatsApp<br>
+<!-- -->Frequência: Ao rejeitar agendamento<br>
+<!-- -->Objetivo: Informar motivo</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-captura-de-motivo-de-recusa">Título: Captura de Motivo de Recusa<a href="#título-captura-de-motivo-de-recusa" class="hash-link" aria-label="Direct link to Título: Captura de Motivo de Recusa" title="Direct link to Título: Captura de Motivo de Recusa" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQJUSTIFICATIVAREJEICAO" src="/projeto_agendamento/assets/images/SEQ-MotivoRecusa-400d326e7d9918b3a803b3d7a24ea5cf.png" width="5942" height="3670" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-1">História de Usuário<a href="#história-de-usuário-1" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como prestador de serviço, quero informar o motivo da rejeição de um agendamento, para que o cliente compreenda a razão e o estabelecimento possa analisar padrões de recusa para melhorias.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-1">Fluxo de uso (Diagrama de Sequência)<a href="#fluxo-de-uso-diagrama-de-sequência-1" class="hash-link" aria-label="Direct link to Fluxo de uso (Diagrama de Sequência)" title="Direct link to Fluxo de uso (Diagrama de Sequência)" translate="no">​</a></h4>
+<ol>
+<li>👥 Prestador seleciona &quot;Rejeitar&quot; para um agendamento (via botão ou link)</li>
+<li>📥 Webhook Ingest identifica ação de rejeição</li>
+<li>Em vez de processar imediatamente, 🤖 Bot Orchestrator envia nova mensagem via ☁️ WhatsApp Provider: &quot;Por qual motivo você está rejeitando este agendamento?&quot;</li>
+<li>🤖 Bot Orchestrator apresenta lista de motivos pré-definidos como botões de resposta rápida:<!-- -->
+<ul>
+<li>&quot;Horário já ocupado&quot;</li>
+<li>&quot;Serviço indisponível&quot;</li>
+<li>&quot;Materiais em falta&quot;</li>
+<li>&quot;Problemas técnicos&quot;</li>
+<li>&quot;Outro motivo (especificar)&quot;</li>
+</ul>
+</li>
+<li>👥 Prestador seleciona um motivo pré-definido ou &quot;Outro motivo&quot;</li>
+<li>Se &quot;Outro motivo&quot;, 🤖 Bot Orchestrator solicita descrição em texto livre</li>
+<li>👥 Prestador fornece justificativa personalizada</li>
+<li>🌐 API Gateway envia <code>PATCH /bookings/{id}</code> com action=reject, staff_id e rejection_reason</li>
+<li>📅 Agenda &amp; Booking atualiza estado do agendamento e registra motivo da rejeição no 🗄️ PostgreSQL</li>
+<li>📅 Agenda &amp; Booking emite evento <code>booking.rejected</code> com o motivo incluído na 📨 Fila/EventBus</li>
+<li>Analytics Service captura motivo para relatórios de gestão</li>
+<li>📣 Notificações prepara mensagem para o cliente incluindo motivo apropriado</li>
+<li>📣 Notificações adapta a mensagem para o cliente (reformulando motivos sensíveis)</li>
+<li>💬 Cliente recebe notificação de rejeição com justificativa e sugestões de alternativas via ☁️ WhatsApp Provider</li>
+<li>📅 Agenda &amp; Booking registra motivo completo no audit_log no 🗄️ PostgreSQL para análise interna</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-1">Critérios de Aceitação<a href="#critérios-de-aceitação-1" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve capturar motivo da rejeição em todas as recusas de agendamento</li>
+<li>Deve oferecer lista de motivos comuns pré-definidos e opção para justificativa personalizada</li>
+<li>Deve garantir que a comunicação ao cliente seja profissional e construtiva</li>
+<li>Deve armazenar motivos de rejeição para análise e relatórios gerenciais</li>
+<li>Deve permitir configuração dos motivos pré-definidos pelo estabelecimento</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-1">Definition of Done<a href="#definition-of-done-1" class="hash-link" aria-label="Direct link to Definition of Done" title="Direct link to Definition of Done" translate="no">​</a></h4>
+<ul>
+<li>Interface para seleção de motivos de rejeição implementada</li>
+<li>Extensão do schema de agendamentos para incluir motivos de rejeição</li>
+<li>Mecanismo de adaptação de mensagens para comunicação ao cliente</li>
+<li>Dashboard analítico de motivos de rejeição implementado</li>
+<li>Testes de validação de motivos e persistência</li>
+<li>Documentação de APIs de rejeição atualizadas</li>
+<li>Guia para configuração de motivos personalizados</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-fluxo-de-proposta-de-horário-alternativo">3. Fluxo de Proposta de Horário Alternativo<a href="#3-fluxo-de-proposta-de-horário-alternativo" class="hash-link" aria-label="Direct link to 3. Fluxo de Proposta de Horário Alternativo" title="Direct link to 3. Fluxo de Proposta de Horário Alternativo" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Prestador de Serviço<br>
+<!-- -->Canal: WhatsApp<br>
+<!-- -->Frequência: Ao propor alternativa<br>
+<!-- -->Objetivo: Manter cliente</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-contraproposta-de-agendamento">Título: Contraproposta de Agendamento<a href="#título-contraproposta-de-agendamento" class="hash-link" aria-label="Direct link to Título: Contraproposta de Agendamento" title="Direct link to Título: Contraproposta de Agendamento" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQPROPOSTAHORARIO" src="/projeto_agendamento/assets/images/SEQ-PropostaHorario-2b23eb39983207e340b9c4b7e4d3ae1a.png" width="6389" height="6004" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-2">História de Usuário<a href="#história-de-usuário-2" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como prestador de serviço, quero oferecer um horário alternativo ao invés de simplesmente rejeitar um agendamento, para que eu mantenha o cliente e otimize minha agenda aproveitando horários disponíveis.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-2">Fluxo de uso (Diagrama de Sequência)<a href="#fluxo-de-uso-diagrama-de-sequência-2" class="hash-link" aria-label="Direct link to Fluxo de uso (Diagrama de Sequência)" title="Direct link to Fluxo de uso (Diagrama de Sequência)" translate="no">​</a></h4>
+<ol>
+<li>👥 Prestador visualiza detalhes do agendamento e identifica impossibilidade</li>
+<li>☁️ WhatsApp Provider apresenta opções: &quot;Aceitar&quot;, &quot;Rejeitar&quot;, &quot;Propor outro horário&quot;</li>
+<li>👥 Prestador seleciona &quot;Propor outro horário&quot;</li>
+<li>🌐 API Gateway solicita disponibilidade do prestador ao 📅 Agenda &amp; Booking (<code>GET /availability?staff_id=X&amp;date=Y</code>)</li>
+<li>📅 Agenda &amp; Booking calcula slots disponíveis nas próximas 72 horas</li>
+<li>🤖 Bot Orchestrator apresenta calendário interativo com horários disponíveis via ☁️ WhatsApp Provider</li>
+<li>👥 Prestador seleciona horário alternativo proposto</li>
+<li>🌐 API Gateway envia <code>PATCH /bookings/{id}</code> com action=propose_alternative, new_datetime, staff_id</li>
+<li>📅 Agenda &amp; Booking registra proposta sem alterar o agendamento original no 🗄️ PostgreSQL</li>
+<li>📅 Agenda &amp; Booking atualiza estado para &quot;alternative_proposed&quot;</li>
+<li>📅 Agenda &amp; Booking emite evento <code>booking.alternative_proposed</code> na 📨 Fila/EventBus</li>
+<li>📣 Notificações prepara mensagem para o cliente com detalhes da proposta</li>
+<li>💬 Cliente recebe notificação com botões: &quot;Aceitar novo horário&quot; ou &quot;Recusar e cancelar&quot; via ☁️ WhatsApp Provider</li>
+<li>Se 💬 Cliente aceita, 📅 Agenda &amp; Booking atualiza o agendamento com o novo horário</li>
+<li>📅 Agenda &amp; Booking emite evento <code>booking.rescheduled</code> para atualização de sistemas na 📨 Fila/EventBus</li>
+<li>Se 💬 Cliente recusa, 📅 Agenda &amp; Booking cancela o agendamento e 📣 Notificações avisa o prestador</li>
+<li>Em ambos os casos, 📅 Agenda &amp; Booking registra a decisão e 📣 Notificações avisa todas as partes</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-2">Critérios de Aceitação<a href="#critérios-de-aceitação-2" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir que o prestador visualize sua disponibilidade real antes de propor alternativa</li>
+<li>Deve garantir que o horário proposto esteja realmente disponível (com lock temporário)</li>
+<li>Deve possibilitar que o cliente aceite ou recuse a proposta com um clique</li>
+<li>Deve atualizar corretamente todos os sistemas envolvidos após decisão do cliente</li>
+<li>Deve limitar propostas a um período configurável (ex: próximas 72 horas)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-2">Definition of Done<a href="#definition-of-done-2" class="hash-link" aria-label="Direct link to Definition of Done" title="Direct link to Definition of Done" translate="no">​</a></h4>
+<ul>
+<li>Interface para seleção de horários alternativos implementada</li>
+<li>Fluxo de negociação cliente-prestador via mensageria configurado</li>
+<li>Estado transitório &quot;alternative_proposed&quot; implementado no sistema</li>
+<li>Mecanismo de lock temporário para horário proposto</li>
+<li>Testes de fluxo completo de contraproposta com aceitação e recusa</li>
+<li>Métricas de taxa de aceitação de contrapropostas</li>
+<li>Documentação do ciclo de vida completo de agendamento com contrapropostas</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-fluxo-de-expiração-e-escalação">4. Fluxo de Expiração e Escalação<a href="#4-fluxo-de-expiração-e-escalação" class="hash-link" aria-label="Direct link to 4. Fluxo de Expiração e Escalação" title="Direct link to 4. Fluxo de Expiração e Escalação" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento<br>
+<!-- -->Canal: WebApp / WhatsApp<br>
+<!-- -->Frequência: Sem resposta do prestador<br>
+<!-- -->Objetivo: Garantir resposta</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-gerenciamento-de-agendamentos-sem-resposta">Título: Gerenciamento de Agendamentos sem Resposta<a href="#título-gerenciamento-de-agendamentos-sem-resposta" class="hash-link" aria-label="Direct link to Título: Gerenciamento de Agendamentos sem Resposta" title="Direct link to Título: Gerenciamento de Agendamentos sem Resposta" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQPRAZORESPOSTA" src="/projeto_agendamento/assets/images/SEQ-PrazoResposta-939005b77b53e66f1edbf02e9cf46fba.png" width="5421" height="3596" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-3">História de Usuário<a href="#história-de-usuário-3" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero ser notificado quando um prestador não responde a um agendamento dentro do prazo estipulado, para que eu possa intervir, garantir o atendimento ao cliente e manter a qualidade do serviço.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-3">Fluxo de uso (Diagrama de Sequência)<a href="#fluxo-de-uso-diagrama-de-sequência-3" class="hash-link" aria-label="Direct link to Fluxo de uso (Diagrama de Sequência)" title="Direct link to Fluxo de uso (Diagrama de Sequência)" translate="no">​</a></h4>
+<ol>
+<li>📣 Notificações registra timestamp de envio quando notificação é enviada ao prestador no 🗄️ PostgreSQL</li>
+<li>⏰ Scheduler executa periodicamente (a cada 15 minutos)</li>
+<li>⏰ Scheduler executa query no 🗄️ PostgreSQL buscando agendamentos pendentes com notificações antigas</li>
+<li>Para cada agendamento expirado encontrado:
+a. ⏰ Scheduler publica evento <code>booking.response_timeout</code> com booking_id e staff_id na 📨 Fila/EventBus</li>
+<li>📣 Notificações consome evento e busca informações do estabelecimento</li>
+<li>📣 Notificações identifica o 👤 Dono do tenant (estabelecimento)</li>
+<li>📣 Notificações envia alerta prioritário ao 👤 Dono via ☁️ WhatsApp Provider:
+&quot;Agendamento #123 aguarda resposta do profissional João há mais de 2h&quot;</li>
+<li>📣 Notificações envia link direto para ação do dono com opções:
+a. &quot;Aceitar em nome do profissional&quot;
+b. &quot;Rejeitar e propor alternativa&quot;
+c. &quot;Transferir para outro profissional&quot;</li>
+<li>👤 Dono seleciona ação desejada</li>
+<li>🌐 API Gateway processa a ação selecionada como se fosse do dono (staff_id = owner_id)</li>
+<li>📅 Agenda &amp; Booking atualiza agendamento conforme ação e emite eventos apropriados na 📨 Fila/EventBus</li>
+<li>📣 Notificações notifica 💬 Cliente sobre a decisão</li>
+<li>📅 Agenda &amp; Booking registra escalação no audit_log no 🗄️ PostgreSQL para análise de desempenho</li>
+<li>Analytics Service atualiza métricas de tempo de resposta do profissional</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-3">Critérios de Aceitação<a href="#critérios-de-aceitação-3" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve detectar automaticamente agendamentos sem resposta após 2 horas do envio da notificação</li>
+<li>Deve escalar para o dono/gerente com informações completas para decisão rápida</li>
+<li>Deve permitir que o dono tome ações imediatas sem necessidade de acessar outros sistemas</li>
+<li>Deve registrar métricas de escalação por profissional para análise de desempenho</li>
+<li>Deve garantir que nenhum agendamento fique sem resposta por mais de 3 horas</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-3">Definition of Done<a href="#definition-of-done-3" class="hash-link" aria-label="Direct link to Definition of Done" title="Direct link to Definition of Done" translate="no">​</a></h4>
+<ul>
+<li>Implementação do ⏰ Scheduler para detecção de timeouts</li>
+<li>Interface de alertas prioritários para donos/gerentes</li>
+<li>Mecanismo de ação imediata via link seguro</li>
+<li>Dashboards de métricas de tempo de resposta por profissional</li>
+<li>Testes automatizados de detecção e escalação</li>
+<li>Documentação do processo de escalação e SLAs</li>
+<li>Configuração de parâmetros de timeout personalizáveis por estabelecimento</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-fluxo-de-delegaçãotransferência">5. Fluxo de Delegação/Transferência<a href="#5-fluxo-de-delegaçãotransferência" class="hash-link" aria-label="Direct link to 5. Fluxo de Delegação/Transferência" title="Direct link to 5. Fluxo de Delegação/Transferência" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Prestador de Serviço<br>
+<!-- -->Canal: WhatsApp<br>
+<!-- -->Frequência: Quando necessário<br>
+<!-- -->Objetivo: Transferir atendimento</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-redirecionamento-de-serviço-para-outro-profissional">Título: Redirecionamento de Serviço para Outro Profissional<a href="#título-redirecionamento-de-serviço-para-outro-profissional" class="hash-link" aria-label="Direct link to Título: Redirecionamento de Serviço para Outro Profissional" title="Direct link to Título: Redirecionamento de Serviço para Outro Profissional" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQTRANSFERIRATENDIMENTO" src="/projeto_agendamento/assets/images/SEQ-TransferirAtendimento-3d1a47e53df424fc4542e3165753b1e2.png" width="8438" height="4424" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-4">História de Usuário<a href="#história-de-usuário-4" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como prestador de serviço, quero transferir um agendamento para outro profissional qualificado, para que o cliente possa ser atendido mesmo quando eu não puder realizar o serviço pessoalmente.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-4">Fluxo de uso (Diagrama de Sequência)<a href="#fluxo-de-uso-diagrama-de-sequência-4" class="hash-link" aria-label="Direct link to Fluxo de uso (Diagrama de Sequência)" title="Direct link to Fluxo de uso (Diagrama de Sequência)" translate="no">​</a></h4>
+<ol>
+<li>👥 Prestador visualiza detalhes do agendamento e seleciona &quot;Transferir&quot;</li>
+<li>🤖 Bot Orchestrator identifica ação de transferência</li>
+<li>🌐 API Gateway consulta lista de profissionais disponíveis:
+a. <code>GET /staff?service_id=X&amp;datetime=Y&amp;available=true</code></li>
+<li>🌐 API Gateway encaminha solicitação ao 🛠️ Equipe &amp; Turnos</li>
+<li>🛠️ Equipe &amp; Turnos busca funcionários habilitados para o serviço e disponíveis no horário no 🗄️ PostgreSQL</li>
+<li>🛠️ Equipe &amp; Turnos filtra profissionais baseado em:
+a. Vínculo com o serviço na tabela staff_services
+b. Disponibilidade no horário (turnos e outros agendamentos)
+c. Status ativo do funcionário</li>
+<li>🤖 Bot Orchestrator apresenta lista de profissionais elegíveis com taxa de ocupação/avaliação via ☁️ WhatsApp Provider</li>
+<li>👥 Prestador seleciona colega para transferência</li>
+<li>🤖 Bot Orchestrator solicita confirmação da transferência</li>
+<li>👥 Prestador confirma a transferência</li>
+<li>🌐 API Gateway envia <code>PATCH /bookings/{id}</code> com action=transfer, new_staff_id</li>
+<li>📅 Agenda &amp; Booking valida transferência (profissional qualificado e disponível)</li>
+<li>📅 Agenda &amp; Booking atualiza agendamento com novo staff_id no 🗄️ PostgreSQL</li>
+<li>📅 Agenda &amp; Booking registra histórico de transferência no audit_log</li>
+<li>📅 Agenda &amp; Booking emite evento <code>booking.transferred</code> na 📨 Fila/EventBus</li>
+<li>📣 Notificações envia confirmação para o 👥 Prestador original via ☁️ WhatsApp Provider</li>
+<li>📣 Notificações envia notificação ao novo 👥 Prestador sobre agendamento transferido</li>
+<li>📣 Notificações informa ao 💬 Cliente sobre a mudança de profissional</li>
+<li>Analytics Service registra a transferência para relatórios de balanceamento de carga</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-4">Critérios de Aceitação<a href="#critérios-de-aceitação-4" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve exibir apenas profissionais realmente qualificados e disponíveis para o serviço</li>
+<li>Deve garantir que o novo profissional seja notificado imediatamente sobre o agendamento transferido</li>
+<li>Deve informar o cliente sobre a mudança de profissional com explicação adequada</li>
+<li>Deve manter histórico completo de transferências para análise de distribuição</li>
+<li>Deve validar em tempo real a disponibilidade antes de confirmar a transferência</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-4">Definition of Done<a href="#definition-of-done-4" class="hash-link" aria-label="Direct link to Definition of Done" title="Direct link to Definition of Done" translate="no">​</a></h4>
+<ul>
+<li>Interface de seleção de profissionais para transferência implementada</li>
+<li>Algoritmo de filtro de elegibilidade implementado e testado</li>
+<li>Modelo de dados estendido para registro de histórico de transferências</li>
+<li>Testes de cenários de transferência (sucesso, falha, indisponibilidade)</li>
+<li>Métricas de balanceamento de carga entre profissionais</li>
+<li>Templates de notificação para todas as partes envolvidas</li>
+<li>Documentação do processo de transferência e regras de negócio</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-fluxo-de-informações-adicionais">6. Fluxo de Informações Adicionais<a href="#6-fluxo-de-informações-adicionais" class="hash-link" aria-label="Direct link to 6. Fluxo de Informações Adicionais" title="Direct link to 6. Fluxo de Informações Adicionais" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Prestador de Serviço<br>
+<!-- -->Canal: WhatsApp<br>
+<!-- -->Frequência: Após aceitar agendamento<br>
+<!-- -->Objetivo: Coletar detalhes</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-coleta-de-detalhes-complementares-do-cliente">Título: Coleta de Detalhes Complementares do Cliente<a href="#título-coleta-de-detalhes-complementares-do-cliente" class="hash-link" aria-label="Direct link to Título: Coleta de Detalhes Complementares do Cliente" title="Direct link to Título: Coleta de Detalhes Complementares do Cliente" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQINFORMACOESADICIONAIS" src="/projeto_agendamento/assets/images/SEQ-InformacoesAdicionais-7c1c8c2c26cc3d37338bf09b6dddb135.png" width="5590" height="4304" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-5">História de Usuário<a href="#história-de-usuário-5" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como prestador de serviço, quero solicitar informações adicionais do cliente após aceitar um agendamento, para que eu possa me preparar adequadamente para o serviço e oferecer uma experiência personalizada.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-5">Fluxo de uso (Diagrama de Sequência)<a href="#fluxo-de-uso-diagrama-de-sequência-5" class="hash-link" aria-label="Direct link to Fluxo de uso (Diagrama de Sequência)" title="Direct link to Fluxo de uso (Diagrama de Sequência)" translate="no">​</a></h4>
+<ol>
+<li>👥 Prestador aceita o agendamento (via botão ou link)</li>
+<li>📅 Agenda &amp; Booking processa o aceite normalmente (<code>PATCH /bookings/{id}</code> com action=accept)</li>
+<li>📅 Agenda &amp; Booking atualiza estado para &quot;confirmed&quot; no 🗄️ PostgreSQL</li>
+<li>No momento do aceite, 🤖 Bot Orchestrator apresenta opção &quot;Solicitar informações adicionais&quot; via ☁️ WhatsApp Provider</li>
+<li>👥 Prestador seleciona essa opção e escolhe tipo de informação:
+a. Seleciona de template pré-definido (ex: &quot;Histórico de procedimentos&quot;, &quot;Alergias&quot;)
+b. Ou escreve pergunta personalizada</li>
+<li>📅 Agenda &amp; Booking registra solicitação na tabela booking_information_requests no 🗄️ PostgreSQL</li>
+<li>📅 Agenda &amp; Booking emite evento <code>booking.information_requested</code> na 📨 Fila/EventBus</li>
+<li>📣 Notificações consome o evento da 📨 Fila/EventBus</li>
+<li>🤖 Bot Orchestrator envia mensagem ao 💬 Cliente via ☁️ WhatsApp Provider:
+&quot;Seu agendamento foi confirmado! O profissional gostaria de saber: [pergunta]&quot;</li>
+<li>💬 Cliente responde à pergunta via WhatsApp</li>
+<li>📥 Webhook Ingest recebe resposta e identifica contexto</li>
+<li>📅 Agenda &amp; Booking anexa resposta ao agendamento (tabela booking_additional_info) no 🗄️ PostgreSQL</li>
+<li>📅 Agenda &amp; Booking emite evento <code>booking.information_provided</code> na 📨 Fila/EventBus</li>
+<li>📣 Notificações notifica 👥 Prestador sobre resposta recebida</li>
+<li>👥 Prestador recebe notificação com a informação fornecida pelo 💬 Cliente</li>
+<li>💻 Painel disponibiliza informações adicionais na visualização detalhada do agendamento</li>
+<li>📅 Agenda &amp; Booking registra ciclo completo de solicitação-resposta no histórico do agendamento no 🗄️ PostgreSQL</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-5">Critérios de Aceitação<a href="#critérios-de-aceitação-5" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir solicitação de informações através de templates ou perguntas livres</li>
+<li>Deve vincular corretamente perguntas e respostas ao agendamento específico</li>
+<li>Deve notificar o prestador imediatamente quando o cliente fornecer as informações</li>
+<li>Deve exibir claramente as informações adicionais na interface de detalhes do agendamento</li>
+<li>Deve respeitar limitações de privacidade e não solicitar informações sensíveis não pertinentes</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-5">Definition of Done<a href="#definition-of-done-5" class="hash-link" aria-label="Direct link to Definition of Done" title="Direct link to Definition of Done" translate="no">​</a></h4>
+<ul>
+<li>Extensão do modelo de dados para suportar solicitações e respostas</li>
+<li>Templates pré-definidos de perguntas comuns configuráveis</li>
+<li>Interface para solicitação de informações implementada</li>
+<li>Mecanismo de captura e processamento de respostas do cliente</li>
+<li>Testes de fluxo completo de solicitação e resposta</li>
+<li>Validação de segurança e privacidade de dados</li>
+<li>Documentação dos templates disponíveis e boas práticas</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fluxos-opcionais-1">Fluxos Opcionais<a href="#fluxos-opcionais-1" class="hash-link" aria-label="Direct link to Fluxos Opcionais" title="Direct link to Fluxos Opcionais" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="7-fluxo-de-aceite-parcial-para-múltiplos-serviços">7. Fluxo de Aceite Parcial (para múltiplos serviços)<a href="#7-fluxo-de-aceite-parcial-para-múltiplos-serviços" class="hash-link" aria-label="Direct link to 7. Fluxo de Aceite Parcial (para múltiplos serviços)" title="Direct link to 7. Fluxo de Aceite Parcial (para múltiplos serviços)" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Prestador de Serviço
+Canal: WhatsApp
+Frequência: Ao receber múltiplos serviços
+Objetivo: Aceitar parcialmente</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-confirmação-seletiva-de-serviços-agrupados">Título: Confirmação Seletiva de Serviços Agrupados<a href="#título-confirmação-seletiva-de-serviços-agrupados" class="hash-link" aria-label="Direct link to Título: Confirmação Seletiva de Serviços Agrupados" title="Direct link to Título: Confirmação Seletiva de Serviços Agrupados" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQACEITEPARCIAL" src="/projeto_agendamento/assets/images/SEQ-AceiteParcial-33f8346fcb83f80b09bdda2a4a2d9765.png" width="6135" height="4292" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-6">História de Usuário:<a href="#história-de-usuário-6" class="hash-link" aria-label="Direct link to História de Usuário:" title="Direct link to História de Usuário:" translate="no">​</a></h4>
+<p>Como prestador de serviço, quero aceitar apenas alguns dos serviços solicitados em um agendamento múltiplo, para que eu possa atender parcialmente o cliente quando não posso realizar todos os procedimentos solicitados.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-6">Fluxo de uso (Diagrama de Sequência):<a href="#fluxo-de-uso-diagrama-de-sequência-6" class="hash-link" aria-label="Direct link to Fluxo de uso (Diagrama de Sequência):" title="Direct link to Fluxo de uso (Diagrama de Sequência):" translate="no">​</a></h4>
+<ol>
+<li>📅 Agenda &amp; Booking identifica agendamento com múltiplos serviços (tabela booking_services) no 🗄️ PostgreSQL</li>
+<li>🤖 Bot Orchestrator, ao notificar o 👥 Prestador, apresenta lista detalhada de todos os serviços incluídos via ☁️ WhatsApp Provider</li>
+<li>👥 Prestador visualiza agendamento e seleciona &quot;Aceite Parcial&quot;</li>
+<li>🤖 Bot Orchestrator exibe lista de serviços com checkboxes para seleção individual</li>
+<li>👥 Prestador marca quais serviços pode realizar e quais não pode</li>
+<li>Para cada serviço não aceito, 👥 Prestador seleciona motivo da recusa</li>
+<li>👥 Prestador confirma seleção parcial</li>
+<li>🌐 API Gateway envia <code>PATCH /bookings/{id}/services</code> com lista de serviços aceitos e recusados</li>
+<li>📅 Agenda &amp; Booking processa aceite parcial:
+a. Se todos serviços recusados: rejeita agendamento completo
+b. Se alguns aceitos: divide o agendamento em dois registros relacionados no 🗄️ PostgreSQL</li>
+<li>Para serviços aceitos:
+a. 📅 Agenda &amp; Booking cria ou atualiza agendamento com estado &quot;confirmed&quot;
+b. 📅 Agenda &amp; Booking ajusta duração com base nos serviços aceitos</li>
+<li>Para serviços recusados:
+a. 📅 Agenda &amp; Booking cria agendamento com estado &quot;rejected&quot; e referência ao original
+b. 📅 Agenda &amp; Booking registra motivos individuais de rejeição</li>
+<li>📅 Agenda &amp; Booking emite evento &quot;booking.partially_accepted&quot; na 📨 Fila/EventBus</li>
+<li>📣 Notificações prepara mensagem detalhada para o cliente</li>
+<li>💬 Cliente recebe notificação via ☁️ WhatsApp Provider explicando quais serviços foram aceitos e quais foram recusados</li>
+<li>💬 Cliente recebe opções para:
+a. Confirmar agendamento parcial
+b. Cancelar tudo
+c. Tentar reagendar serviços recusados</li>
+<li>🤖 Bot Orchestrator acompanha fluxo conforme escolha do cliente</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-6">Critérios de Aceitação:<a href="#critérios-de-aceitação-6" class="hash-link" aria-label="Direct link to Critérios de Aceitação:" title="Direct link to Critérios de Aceitação:" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir seleção granular de serviços individuais dentro de um agendamento múltiplo</li>
+<li>Deve processar corretamente a divisão do agendamento mantendo referências entre registros</li>
+<li>Deve garantir recálculo preciso de duração e valores após aceite parcial</li>
+<li>Deve comunicar claramente ao cliente quais serviços foram aceitos e recusados</li>
+<li>Deve oferecer alternativas claras para os serviços recusados</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-6">Definition of Done:<a href="#definition-of-done-6" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<ul>
+<li>Modelo de dados estendido para suportar agendamentos relacionados</li>
+<li>Interface para seleção granular de serviços implementada</li>
+<li>Lógica de divisão de agendamentos implementada e testada</li>
+<li>Algoritmo de recálculo de duração e valores configurado</li>
+<li>Templates de notificação para aceite parcial</li>
+<li>Testes de cenários variados de aceite parcial</li>
+<li>Documentação do fluxo de vida de agendamentos parcialmente aceitos</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-fluxo-de-notificação-ao-estabelecimento">8. Fluxo de Notificação ao Estabelecimento<a href="#8-fluxo-de-notificação-ao-estabelecimento" class="hash-link" aria-label="Direct link to 8. Fluxo de Notificação ao Estabelecimento" title="Direct link to 8. Fluxo de Notificação ao Estabelecimento" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento
+Canal: WebApp / WhatsApp
+Frequência: Ao receber novo agendamento
+Objetivo: Alerta de novos agendamentos</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-comunicação-interna-de-agendamento-confirmado">Título: Comunicação Interna de Agendamento Confirmado<a href="#título-comunicação-interna-de-agendamento-confirmado" class="hash-link" aria-label="Direct link to Título: Comunicação Interna de Agendamento Confirmado" title="Direct link to Título: Comunicação Interna de Agendamento Confirmado" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQNOTIFICACAOESTABELECIMENTO" src="/projeto_agendamento/assets/images/SEQ-NotificacaoEstabelecimento-e23c3e7b2d5b59afdaddc34158ce617b.png" width="5806" height="4366" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-7">História de Usuário<a href="#história-de-usuário-7" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como estabelecimento, quero que todos os departamentos relevantes sejam automaticamente notificados após a confirmação de um agendamento, para que possam se preparar adequadamente para receber o cliente e garantir um atendimento perfeito.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-7">Fluxo de uso (Diagrama de Sequência)<a href="#fluxo-de-uso-diagrama-de-sequência-7" class="hash-link" aria-label="Direct link to Fluxo de uso (Diagrama de Sequência)" title="Direct link to Fluxo de uso (Diagrama de Sequência)" translate="no">​</a></h4>
+<ol>
+<li>👥 Prestador aceita agendamento</li>
+<li>📅 Agenda &amp; Booking processa o aceite normalmente</li>
+<li>📅 Agenda &amp; Booking emite evento &quot;booking.accepted&quot; na 📨 Fila/EventBus</li>
+<li>📣 Notificações consome o evento da 📨 Fila/EventBus</li>
+<li>📣 Notificações identifica departamentos envolvidos com base em:
+a. Tipo de serviço (tabela service_departments) no 🗄️ PostgreSQL
+b. Requisitos especiais do serviço
+c. Configuração do estabelecimento</li>
+<li>Para cada departamento relevante:
+a. 📣 Notificações busca canal de notificação configurado (Slack, WhatsApp, email)
+b. 📣 Notificações prepara mensagem específica com informações pertinentes ao departamento</li>
+<li>📣 Notificações envia notificações personalizadas:<!-- -->
+<ul>
+<li>Recepção: detalhes do cliente, horário e serviço</li>
+<li>Estoque: materiais necessários para o serviço</li>
+<li>Equipamentos: preparação de estações de trabalho</li>
+<li>Gerência: adições ao dashboard operacional</li>
+</ul>
+</li>
+<li>📣 Notificações registra confirmações de recebimento das notificações no 🗄️ PostgreSQL</li>
+<li>Para departamentos críticos sem confirmação, 📣 Notificações escalona após timeout</li>
+<li>📣 Notificações atualiza calendário compartilhado visível para toda a equipe</li>
+<li>Analytics Service atualiza KPIs de ocupação e disponibilidade em tempo real no ⚡ Redis</li>
+<li>💻 Painel atualiza dashboard operacional com agendamentos confirmados</li>
+<li>📅 Agenda &amp; Booking registra todas as notificações internas para auditoria no 🗄️ PostgreSQL</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-7">Critérios de Aceitação<a href="#critérios-de-aceitação-7" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve identificar corretamente todos os departamentos relevantes para cada tipo de serviço</li>
+<li>Deve enviar notificações personalizadas por departamento com apenas informações pertinentes</li>
+<li>Deve garantir confirmação de recebimento para notificações críticas</li>
+<li>Deve atualizar automaticamente sistemas de visualização compartilhados (calendários, dashboards)</li>
+<li>Deve permitir configuração flexível de canais de comunicação por departamento</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-7">Definition of Done<a href="#definition-of-done-7" class="hash-link" aria-label="Direct link to Definition of Done" title="Direct link to Definition of Done" translate="no">​</a></h4>
+<ul>
+<li>Modelo de relacionamento entre serviços e departamentos implementado</li>
+<li>Múltiplos canais de notificação configurados (Slack, WhatsApp, Email, etc.)</li>
+<li>Templates específicos por departamento implementados</li>
+<li>Mecanismo de confirmação de recebimento configurado</li>
+<li>Integrações com sistemas de calendário e dashboard</li>
+<li>Testes de notificação para todos os departamentos</li>
+<li>Interface de configuração de canais de comunicação</li>
+<li>Documentação do fluxo de comunicação interna</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guia_tecnico/fluxos/fluxos_prestador.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_cliente"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Fluxos do Cliente</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_lembretes"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Fluxos de Lembretes</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-índice-de-fluxos" class="table-of-contents__link toc-highlight">📑 Índice de Fluxos</a><ul><li><a href="#fluxos-essenciais-mvp" class="table-of-contents__link toc-highlight">Fluxos Essenciais (MVP)</a></li><li><a href="#fluxos-opcionais" class="table-of-contents__link toc-highlight">Fluxos Opcionais</a></li></ul></li><li><a href="#fluxos-essenciais-mvp-1" class="table-of-contents__link toc-highlight">Fluxos Essenciais (MVP)</a><ul><li><a href="#1-fluxo-de-reação-rápida-via-whatsapp" class="table-of-contents__link toc-highlight">1. Fluxo de Reação Rápida via WhatsApp</a></li><li><a href="#2-fluxo-de-justificativa-para-rejeição" class="table-of-contents__link toc-highlight">2. Fluxo de Justificativa para Rejeição</a></li><li><a href="#3-fluxo-de-proposta-de-horário-alternativo" class="table-of-contents__link toc-highlight">3. Fluxo de Proposta de Horário Alternativo</a></li><li><a href="#4-fluxo-de-expiração-e-escalação" class="table-of-contents__link toc-highlight">4. Fluxo de Expiração e Escalação</a></li><li><a href="#5-fluxo-de-delegaçãotransferência" class="table-of-contents__link toc-highlight">5. Fluxo de Delegação/Transferência</a></li><li><a href="#6-fluxo-de-informações-adicionais" class="table-of-contents__link toc-highlight">6. Fluxo de Informações Adicionais</a></li></ul></li><li><a href="#fluxos-opcionais-1" class="table-of-contents__link toc-highlight">Fluxos Opcionais</a><ul><li><a href="#7-fluxo-de-aceite-parcial-para-múltiplos-serviços" class="table-of-contents__link toc-highlight">7. Fluxo de Aceite Parcial (para múltiplos serviços)</a></li><li><a href="#8-fluxo-de-notificação-ao-estabelecimento" class="table-of-contents__link toc-highlight">8. Fluxo de Notificação ao Estabelecimento</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/projeto_agendamento/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/projeto_agendamento/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

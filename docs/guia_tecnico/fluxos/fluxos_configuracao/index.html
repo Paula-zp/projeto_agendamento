@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-guia_tecnico/fluxos/fluxos_configuracao" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">Fluxos de Configuração | Projeto Agendamento</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://paula-zp.github.io/projeto_agendamento/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://paula-zp.github.io/projeto_agendamento/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_configuracao"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Fluxos de Configuração | Projeto Agendamento"><meta data-rh="true" name="description" content="Estes fluxos descrevem o processo de setup inicial da plataforma pelo dono do estabelecimento. São executados uma única vez durante a ativação do sistema."><meta data-rh="true" property="og:description" content="Estes fluxos descrevem o processo de setup inicial da plataforma pelo dono do estabelecimento. São executados uma única vez durante a ativação do sistema."><link data-rh="true" rel="icon" href="/projeto_agendamento/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_configuracao"><link data-rh="true" rel="alternate" href="https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_configuracao" hreflang="en"><link data-rh="true" rel="alternate" href="https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_configuracao" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guia Técnico","item":"https://paula-zp.github.io/projeto_agendamento/docs/category/guia-técnico"},{"@type":"ListItem","position":2,"name":"Fluxos","item":"https://paula-zp.github.io/projeto_agendamento/docs/category/fluxos"},{"@type":"ListItem","position":3,"name":"Fluxos de Configuração","item":"https://paula-zp.github.io/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_configuracao"}]}</script><link rel="alternate" type="application/rss+xml" href="/projeto_agendamento/blog/rss.xml" title="Projeto Agendamento RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/projeto_agendamento/blog/atom.xml" title="Projeto Agendamento Atom Feed"><link rel="stylesheet" href="/projeto_agendamento/assets/css/styles.665813eb.css">
+<script src="/projeto_agendamento/assets/js/runtime~main.50f5a564.js" defer="defer"></script>
+<script src="/projeto_agendamento/assets/js/main.620b6db7.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/projeto_agendamento/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/projeto_agendamento/"><div class="navbar__logo"><img src="/projeto_agendamento/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/projeto_agendamento/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Projeto Agendamento</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/projeto_agendamento/docs/intro">Tutorial</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/projeto_agendamento/docs/intro"><span title="Produto Agendamento" class="linkLabel_WmDU">Produto Agendamento</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/projeto_agendamento/docs/category/produto"><span title="Produto" class="categoryLinkLabel_W154">Produto</span></a><button aria-label="Expand sidebar category &#x27;Produto&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/projeto_agendamento/docs/category/arquitetura"><span title="Arquitetura" class="categoryLinkLabel_W154">Arquitetura</span></a><button aria-label="Expand sidebar category &#x27;Arquitetura&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/projeto_agendamento/docs/category/guia-técnico"><span title="Guia Técnico" class="categoryLinkLabel_W154">Guia Técnico</span></a><button aria-label="Collapse sidebar category &#x27;Guia Técnico&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/projeto_agendamento/docs/category/fluxos"><span title="Fluxos" class="categoryLinkLabel_W154">Fluxos</span></a><button aria-label="Collapse sidebar category &#x27;Fluxos&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/visao_geral_fluxos"><span title="Visão Geral dos Fluxos" class="linkLabel_WmDU">Visão Geral dos Fluxos</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_configuracao"><span title="Fluxos de Configuração" class="linkLabel_WmDU">Fluxos de Configuração</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_cliente"><span title="Fluxos do Cliente" class="linkLabel_WmDU">Fluxos do Cliente</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_prestador"><span title="Fluxos do Prestador" class="linkLabel_WmDU">Fluxos do Prestador</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_lembretes"><span title="Fluxos de Lembretes" class="linkLabel_WmDU">Fluxos de Lembretes</span></a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/projeto_agendamento/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/projeto_agendamento/docs/category/guia-técnico"><span>Guia Técnico</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/projeto_agendamento/docs/category/fluxos"><span>Fluxos</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Fluxos de Configuração</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Fluxos de Configuração Inicial</h1></header>
+<p>Estes fluxos descrevem o processo de setup inicial da plataforma pelo dono do estabelecimento. São executados uma única vez durante a ativação do sistema.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-índice-de-fluxos">📑 Índice de Fluxos<a href="#-índice-de-fluxos" class="hash-link" aria-label="Direct link to 📑 Índice de Fluxos" title="Direct link to 📑 Índice de Fluxos" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxos-essenciais-mvp">Fluxos Essenciais (MVP)<a href="#fluxos-essenciais-mvp" class="hash-link" aria-label="Direct link to Fluxos Essenciais (MVP)" title="Direct link to Fluxos Essenciais (MVP)" translate="no">​</a></h3>
+<ol>
+<li><a href="#fluxo-1-login-do-dono-na-webapp">Login do Dono na WebApp</a> - Autenticação segura</li>
+<li><a href="#fluxo-2-cadastro-de-servi%C3%A7os">Cadastro de Serviços</a> - Criação do catálogo</li>
+<li><a href="#fluxo-3-cadastro-de-funcion%C3%A1rios-e-turnos">Cadastro de Funcionários e Turnos</a> - Gestão de equipe</li>
+<li><a href="#fluxo-4-vincula%C3%A7%C3%A3o-de-servi%C3%A7os-aos-funcion%C3%A1rios">Vinculação de Serviços aos Funcionários</a> - Competências</li>
+<li><a href="#fluxo-5-finaliza%C3%A7%C3%A3o-da-configura%C3%A7%C3%A3o">Finalização da Configuração</a> - Ativação do sistema</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxos-opcionais">Fluxos Opcionais<a href="#fluxos-opcionais" class="hash-link" aria-label="Direct link to Fluxos Opcionais" title="Direct link to Fluxos Opcionais" translate="no">​</a></h3>
+<ol start="6">
+<li>Configuração de Dashboard e Métricas</li>
+<li>Configuração de Níveis de Acesso</li>
+<li>Teste e Validação do Sistema</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fluxos-essenciais-mvp-1">Fluxos Essenciais (MVP)<a href="#fluxos-essenciais-mvp-1" class="hash-link" aria-label="Direct link to Fluxos Essenciais (MVP)" title="Direct link to Fluxos Essenciais (MVP)" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-1---login-do-dono-na-webapp">Fluxo 1 - Login do Dono na WebApp<a href="#fluxo-1---login-do-dono-na-webapp" class="hash-link" aria-label="Direct link to Fluxo 1 - Login do Dono na WebApp" title="Direct link to Fluxo 1 - Login do Dono na WebApp" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento<br>
+<!-- -->Canal: WebApp (Painel Administrativo)<br>
+<!-- -->Frequência: Setup inicial<br>
+<!-- -->Objetivo: Autenticação segura do proprietário</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-autenticação-segura-do-proprietário">Título: Autenticação Segura do Proprietário<a href="#título-autenticação-segura-do-proprietário" class="hash-link" aria-label="Direct link to Título: Autenticação Segura do Proprietário" title="Direct link to Título: Autenticação Segura do Proprietário" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQLOGINDONO" src="/projeto_agendamento/assets/images/SEQ-LoginDono-373d1fc405d2700c9699d62060d3f731.png" width="3193" height="2084" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário">História de Usuário<a href="#história-de-usuário" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero fazer login na plataforma de forma segura, para que eu possa acessar as funcionalidades administrativas do sistema e proteger meus dados empresariais.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="diagrama-de-sequência">Diagrama de Sequência<a href="#diagrama-de-sequência" class="hash-link" aria-label="Direct link to Diagrama de Sequência" title="Direct link to Diagrama de Sequência" translate="no">​</a></h4>
+<ol>
+<li>👤 Dono acessa a página inicial da 💻 Painel</li>
+<li>💻 Painel exibe formulário de login</li>
+<li>👤 Dono insere email e senha</li>
+<li>💻 Painel envia requisição POST /auth/login para o 🌐 API Gateway com credenciais</li>
+<li>🌐 API Gateway valida formato da requisição e encaminha para serviço de autenticação</li>
+<li>🌐 API Gateway consulta 🗄️ PostgreSQL para validar credenciais</li>
+<li>🗄️ PostgreSQL retorna dados do usuário</li>
+<li>🌐 API Gateway valida senha usando hash seguro</li>
+<li>🌐 API Gateway gera JWT com role OWNER e escopos apropriados</li>
+<li>🌐 API Gateway armazena refresh token no ⚡ Redis com TTL</li>
+<li>🌐 API Gateway retorna access_token, refresh_token e dados básicos do usuário</li>
+<li>💻 Painel armazena tokens e redireciona para dashboard principal</li>
+<li>💻 Painel exibe interface administrativa com menus e recursos disponíveis</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação">Critérios de Aceitação<a href="#critérios-de-aceitação" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir acesso apenas com credenciais válidas, rejeitando tentativas com senha incorreta</li>
+<li>Deve garantir que apenas usuários com role OWNER tenham acesso às funcionalidades administrativas</li>
+<li>Deve implementar proteção contra ataques de força bruta, limitando tentativas de login</li>
+<li>Deve garantir tokens JWT com expiração apropriada (15-30 minutos)</li>
+<li>Deve fornecer mecanismo de refresh token para renovação da sessão sem re-autenticação</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done">Definition of Done:<a href="#definition-of-done" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<ul>
+<li>Interface de login responsiva e acessível implementada</li>
+<li>Sistema de autenticação testado com diferentes cenários (sucesso, falha, expiração)</li>
+<li>Logs de auditoria de tentativas de login configurados</li>
+<li>Documentação de API de autenticação concluída</li>
+<li>Testes de integração e unitários executados com sucesso</li>
+<li>Validação de segurança OWASP para autenticação realizada</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-2---cadastro-de-serviços">Fluxo 2 - Cadastro de Serviços<a href="#fluxo-2---cadastro-de-serviços" class="hash-link" aria-label="Direct link to Fluxo 2 - Cadastro de Serviços" title="Direct link to Fluxo 2 - Cadastro de Serviços" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento<br>
+<!-- -->Canal: WebApp<br>
+<!-- -->Frequência: Setup inicial<br>
+<!-- -->Objetivo: Criar catálogo de serviços</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título--criação-do-catálogo-de-serviços">Título:  Criação do Catálogo de Serviços<a href="#título--criação-do-catálogo-de-serviços" class="hash-link" aria-label="Direct link to Título:  Criação do Catálogo de Serviços" title="Direct link to Título:  Criação do Catálogo de Serviços" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQCRIACAOSERVICO" src="/projeto_agendamento/assets/images/SEQ-CriacaoServico-dbb2ec895564ca466b0fb4380f414fa9.png" width="5864" height="2768" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-1">História de Usuário<a href="#história-de-usuário-1" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero cadastrar os serviços que ofereço com suas características (nome, preço, duração), para que os clientes possam conhecer minhas ofertas e agendar serviços específicos.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="diagrama-de-sequência-1">Diagrama de Sequência<a href="#diagrama-de-sequência-1" class="hash-link" aria-label="Direct link to Diagrama de Sequência" title="Direct link to Diagrama de Sequência" translate="no">​</a></h4>
+<ol>
+<li>👤 Dono acessa seção &quot;Catálogo de Serviços&quot; no 💻 Painel</li>
+<li>💻 Painel exibe lista de serviços existentes (vazia inicialmente) e botão &quot;Adicionar Serviço&quot;</li>
+<li>👤 Dono clica em &quot;Adicionar Serviço&quot;</li>
+<li>💻 Painel apresenta formulário com campos: nome, descrição, preço, duração em minutos</li>
+<li>👤 Dono preenche informações do serviço e clica em &quot;Salvar&quot;</li>
+<li>💻 Painel envia requisição POST /services com JWT no header e dados do serviço</li>
+<li>🌐 API Gateway valida JWT e permissões (role OWNER)</li>
+<li>🌐 API Gateway encaminha dados para 🧾 Catálogo</li>
+<li>🧾 Catálogo inicia transação no 🗄️ PostgreSQL</li>
+<li>🧾 Catálogo insere registro na tabela services</li>
+<li>🧾 Catálogo insere evento service.created na tabela outbox_events</li>
+<li>🧾 Catálogo finaliza transação</li>
+<li>⏰ Scheduler detecta novo evento na outbox e publica na 📨 Fila/EventBus</li>
+<li>🧾 Catálogo retorna confirmação e service_id</li>
+<li>💻 Painel exibe serviço na lista de serviços com status &quot;Ativo&quot;</li>
+<li>🧾 Catálogo invalida cache de serviços no ⚡ Redis</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-1">Critérios de Aceitação<a href="#critérios-de-aceitação-1" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir cadastrar serviços com nome, descrição, preço e duração obrigatórios</li>
+<li>Deve garantir que cada serviço seja associado ao tenant_id correto do estabelecimento</li>
+<li>Deve validar formato e limites de dados (ex: preço positivo, duração &gt; 0)</li>
+<li>Deve garantir persistência transacional entre dados do serviço e evento de criação</li>
+<li>Deve atualizar automaticamente o catálogo visível para clientes após criação</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-1">Definition of Done:<a href="#definition-of-done-1" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<ul>
+<li>Interface de cadastro e listagem de serviços implementada</li>
+<li>Validação de formulário client-side e server-side implementada</li>
+<li>Testes unitários de validação de regras de negócio concluídos</li>
+<li>Testes de integração da API de serviços realizados</li>
+<li>Invalidação de cache configurada e testada</li>
+<li>Documentação da API de serviços atualizada</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-3---cadastro-de-funcionários-e-turnos">Fluxo 3 - Cadastro de Funcionários e Turnos<a href="#fluxo-3---cadastro-de-funcionários-e-turnos" class="hash-link" aria-label="Direct link to Fluxo 3 - Cadastro de Funcionários e Turnos" title="Direct link to Fluxo 3 - Cadastro de Funcionários e Turnos" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento<br>
+<!-- -->Canal: WebApp<br>
+<!-- -->Frequência: Setup inicial<br>
+<!-- -->Objetivo: Gestão de equipe e disponibilidade</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-gestão-de-equipe-e-disponibilidade">Título: Gestão de Equipe e Disponibilidade<a href="#título-gestão-de-equipe-e-disponibilidade" class="hash-link" aria-label="Direct link to Título: Gestão de Equipe e Disponibilidade" title="Direct link to Título: Gestão de Equipe e Disponibilidade" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQGESTAOFUNCIONARIOS" src="/projeto_agendamento/assets/images/SEQ-GestaoFuncionarios-f696b503bb9d985dfe853733f3e43001.png" width="4970" height="3116" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-2">História de Usuário<a href="#história-de-usuário-2" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero cadastrar meus funcionários e definir seus turnos de trabalho, para que o sistema possa calcular corretamente a disponibilidade para agendamentos.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="diagrama-de-sequência-2">Diagrama de Sequência<a href="#diagrama-de-sequência-2" class="hash-link" aria-label="Direct link to Diagrama de Sequência" title="Direct link to Diagrama de Sequência" translate="no">​</a></h4>
+<ol>
+<li>👤 Dono acessa seção &quot;Equipe&quot; no 💻 Painel</li>
+<li>💻 Painel exibe lista de funcionários existentes e botão &quot;Adicionar Funcionário&quot;</li>
+<li>👤 Dono clica em &quot;Adicionar Funcionário&quot;</li>
+<li>💻 Painel apresenta formulário com campos: nome, telefone, status (ativo/inativo)</li>
+<li>👤 Dono preenche informações básicas e clica em &quot;Salvar&quot;</li>
+<li>💻 Painel envia requisição POST /staff com JWT e dados do funcionário</li>
+<li>🌐 API Gateway valida JWT e permissões</li>
+<li>🌐 API Gateway encaminha dados para 🛠️ Equipe &amp; Turnos</li>
+<li>🛠️ Equipe &amp; Turnos insere registro na tabela staff do 🗄️ PostgreSQL</li>
+<li>🗄️ PostgreSQL retorna confirmação com staff_id</li>
+<li>💻 Painel exibe funcionário na lista e abre tela de configuração de turnos</li>
+<li>👤 Dono seleciona dias da semana e define horários (início/fim) para cada dia</li>
+<li>💻 Painel envia requisição POST <code>/staff/{staff_id}/shifts</code> com dados dos turnos</li>
+<li>🛠️ Equipe &amp; Turnos valida sobreposição de horários</li>
+<li>🛠️ Equipe &amp; Turnos insere registros na tabela work_shifts para cada turno</li>
+<li>🛠️ Equipe &amp; Turnos invalida cache de disponibilidade no ⚡ Redis</li>
+<li>🛠️ Equipe &amp; Turnos publica evento staff.updated na 📨 Fila/EventBus</li>
+<li>💻 Painel exibe resumo dos horários configurados</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-2">Critérios de Aceitação<a href="#critérios-de-aceitação-2" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir cadastrar múltiplos funcionários com nome e telefone</li>
+<li>Deve garantir a definição de turnos de trabalho para cada dia da semana</li>
+<li>Deve validar que os turnos não tenham sobreposição para o mesmo funcionário</li>
+<li>Deve permitir configuração de diferentes horários para diferentes dias</li>
+<li>Deve atualizar automaticamente o cálculo de disponibilidade após configuração</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-2">Definition of Done:<a href="#definition-of-done-2" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<ul>
+<li>Interface de cadastro de funcionários implementada</li>
+<li>Interface de configuração de turnos com seleção visual de horários implementada</li>
+<li>Validação de regras de negócio para turnos implementada</li>
+<li>Testes unitários e de integração concluídos</li>
+<li>Cache de disponibilidade configurado corretamente</li>
+<li>Documentação da API de equipe e turnos atualizada</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-4---vinculação-de-serviços-aos-funcionários">Fluxo 4 - Vinculação de Serviços aos Funcionários<a href="#fluxo-4---vinculação-de-serviços-aos-funcionários" class="hash-link" aria-label="Direct link to Fluxo 4 - Vinculação de Serviços aos Funcionários" title="Direct link to Fluxo 4 - Vinculação de Serviços aos Funcionários" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento<br>
+<!-- -->Canal: WebApp<br>
+<!-- -->Frequência: Setup inicial<br>
+<!-- -->Objetivo: Definir competências da equipe</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-definição-de-habilidades-e-competências">Título: Definição de Habilidades e Competências<a href="#título-definição-de-habilidades-e-competências" class="hash-link" aria-label="Direct link to Título: Definição de Habilidades e Competências" title="Direct link to Título: Definição de Habilidades e Competências" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQASSOCIARSERVICO" src="/projeto_agendamento/assets/images/SEQ-AssociarServico-1efa7d29b67eaf1185b3c3c627da7ef4.png" width="5633" height="3788" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-3">História de Usuário<a href="#história-de-usuário-3" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero definir quais serviços cada funcionário está apto a realizar, para que o sistema ofereça apenas opções válidas durante o agendamento e distribua a carga de trabalho adequadamente.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="diagrama-de-sequência-3">Diagrama de Sequência<a href="#diagrama-de-sequência-3" class="hash-link" aria-label="Direct link to Diagrama de Sequência" title="Direct link to Diagrama de Sequência" translate="no">​</a></h4>
+<ol>
+<li>👤 Dono acessa o perfil de um funcionário na seção &quot;Equipe&quot; do 💻 Painel</li>
+<li>💻 Painel exibe dados do funcionário e botão &quot;Gerenciar Serviços&quot;</li>
+<li>👤 Dono clica em &quot;Gerenciar Serviços&quot;</li>
+<li>💻 Painel envia requisição GET /services para 🌐 API Gateway</li>
+<li>🌐 API Gateway consulta 🧾 Catálogo para obter lista de serviços</li>
+<li>💻 Painel exibe interface com lista de serviços e checkboxes para seleção</li>
+<li>💻 Painel marca os serviços já associados ao funcionário (obtidos via <code>GET /staff/{id}/skills</code>)</li>
+<li>👤 Dono seleciona ou desmarca serviços conforme competências</li>
+<li>👤 Dono clica em &quot;Salvar&quot;</li>
+<li>💻 Painel envia requisição POST <code>/staff/{staff_id}/skills</code> com lista de service_ids</li>
+<li>🌐 API Gateway valida JWT e permissões</li>
+<li>🌐 API Gateway encaminha para 🛠️ Equipe &amp; Turnos</li>
+<li>🛠️ Equipe &amp; Turnos valida existência dos serviços selecionados no tenant</li>
+<li>🛠️ Equipe &amp; Turnos inicia transação no 🗄️ PostgreSQL</li>
+<li>🛠️ Equipe &amp; Turnos remove vínculos antigos e insere novos na tabela staff_services</li>
+<li>🛠️ Equipe &amp; Turnos finaliza transação</li>
+<li>🛠️ Equipe &amp; Turnos invalida caches relacionados no ⚡ Redis</li>
+<li>🛠️ Equipe &amp; Turnos publica evento staff.skills.updated na 📨 Fila/EventBus</li>
+<li>💻 Painel exibe lista atualizada de serviços associados ao funcionário</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-3">Critérios de Aceitação<a href="#critérios-de-aceitação-3" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir selecionar múltiplos serviços para cada funcionário</li>
+<li>Deve garantir que apenas serviços existentes no tenant sejam vinculados</li>
+<li>Deve atualizar corretamente as associações quando serviços são removidos</li>
+<li>Deve refletir imediatamente as mudanças no cálculo de disponibilidade</li>
+<li>Deve garantir que o sistema nunca ofereça agendamentos com funcionários não capacitados</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-3">Definition of Done:<a href="#definition-of-done-3" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<ul>
+<li>Interface de gerenciamento de competências implementada</li>
+<li>Validação de consistência de dados implementada</li>
+<li>Atualização transacional da tabela de relacionamentos implementada</li>
+<li>Testes de validação e integridade referencial concluídos</li>
+<li>Invalidação de cache configurada e testada</li>
+<li>Documentação de API atualizada</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-5---finalização-da-configuração">Fluxo 5 - Finalização da Configuração<a href="#fluxo-5---finalização-da-configuração" class="hash-link" aria-label="Direct link to Fluxo 5 - Finalização da Configuração" title="Direct link to Fluxo 5 - Finalização da Configuração" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento<br>
+<!-- -->Canal: WebApp<br>
+<!-- -->Frequência: Uma vez (conclusão)<br>
+<!-- -->Objetivo: Ativar sistema de agendamentos</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-ativação-do-sistema-de-agendamentos">Título: Ativação do Sistema de Agendamentos<a href="#título-ativação-do-sistema-de-agendamentos" class="hash-link" aria-label="Direct link to Título: Ativação do Sistema de Agendamentos" title="Direct link to Título: Ativação do Sistema de Agendamentos" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQATIVACAOSISTEMA" src="/projeto_agendamento/assets/images/SEQ-AtivacaoSistema-c9a63a3c2dc487a7604276a70bf32823.png" width="6008" height="2888" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-4">História de Usuário<a href="#história-de-usuário-4" class="hash-link" aria-label="Direct link to História de Usuário" title="Direct link to História de Usuário" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero finalizar a configuração inicial e ativar o sistema, para que os clientes possam começar a agendar serviços através do WhatsApp.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="diagrama-de-sequência-4">Diagrama de Sequência<a href="#diagrama-de-sequência-4" class="hash-link" aria-label="Direct link to Diagrama de Sequência" title="Direct link to Diagrama de Sequência" translate="no">​</a></h4>
+<ol>
+<li>💻 Painel monitora continuamente o status de configuração do tenant</li>
+<li>Quando 👤 Dono completa configurações mínimas, 💻 Painel exibe botão &quot;Ativar Sistema&quot;</li>
+<li>👤 Dono acessa dashboard e clica em &quot;Ativar Sistema&quot;</li>
+<li>💻 Painel solicita confirmação com resumo das configurações</li>
+<li>👤 Dono confirma ativação</li>
+<li>💻 Painel envia requisição <code>PATCH /tenants/{tenant_id}/activate</code> para 🌐 API Gateway</li>
+<li>🌐 API Gateway valida JWT e permissões</li>
+<li>🌐 API Gateway encaminha requisição para serviço de gestão de tenants</li>
+<li>Serviço verifica pré-requisitos (ao menos 1 serviço, 1 funcionário, turnos configurados)</li>
+<li>Serviço atualiza status do tenant para &quot;active&quot; no 🗄️ PostgreSQL</li>
+<li>Serviço publica evento tenant.activated na 📨 Fila/EventBus</li>
+<li>📥 Webhook Ingest configura webhook para o ☁️ WhatsApp Provider</li>
+<li>🤖 Bot Orchestrator inicializa templates de mensagens no ⚡ Redis</li>
+<li>🌐 API Gateway retorna confirmação de ativação</li>
+<li>💻 Painel exibe tela de confirmação com QR Code/link do WhatsApp</li>
+<li>👤 Dono recebe instruções de como divulgar o contato para clientes</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-4">Critérios de Aceitação<a href="#critérios-de-aceitação-4" class="hash-link" aria-label="Direct link to Critérios de Aceitação" title="Direct link to Critérios de Aceitação" translate="no">​</a></h4>
+<ul>
+<li>Deve garantir que todos os pré-requisitos estão configurados antes da ativação</li>
+<li>Deve ativar corretamente a integração com WhatsApp Business API</li>
+<li>Deve disponibilizar imediatamente o bot para interações com clientes</li>
+<li>Deve permitir que o dono teste o fluxo de agendamento antes da divulgação</li>
+<li>Deve fornecer recursos para divulgação do serviço (QR Code, link direto)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-4">Definition of Done:<a href="#definition-of-done-4" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<p>Verificação de configuração mínima implementada</p>
+<ul>
+<li>Interface de ativação e confirmação implementada</li>
+<li>Integração com WhatsApp Business API configurada e testada</li>
+<li>Fluxo de teste interno implementado</li>
+<li>Materiais de divulgação (QR Code, instruções) gerados automaticamente</li>
+<li>Documentação de ativação e troubleshooting concluída</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fluxos-opcionais-1">Fluxos Opcionais<a href="#fluxos-opcionais-1" class="hash-link" aria-label="Direct link to Fluxos Opcionais" title="Direct link to Fluxos Opcionais" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-6---configuração-de-dashboard-e-métricas-opcional">Fluxo 6 - Configuração de Dashboard e Métricas (Opcional)<a href="#fluxo-6---configuração-de-dashboard-e-métricas-opcional" class="hash-link" aria-label="Direct link to Fluxo 6 - Configuração de Dashboard e Métricas (Opcional)" title="Direct link to Fluxo 6 - Configuração de Dashboard e Métricas (Opcional)" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento
+Canal: WebApp
+Frequência: Pós-setup inicial
+Objetivo: Monitoramento de performance e indicadores</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-personalização-de-indicadores-operacionais">Título: Personalização de Indicadores Operacionais<a href="#título-personalização-de-indicadores-operacionais" class="hash-link" aria-label="Direct link to Título: Personalização de Indicadores Operacionais" title="Direct link to Título: Personalização de Indicadores Operacionais" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQPERSONALIZARDASH" src="/projeto_agendamento/assets/images/SEQ-PersonalizarDash-b35126eef21aa3ca60b11f6bab8466f5.png" width="4866" height="2732" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-5">História de Usuário:<a href="#história-de-usuário-5" class="hash-link" aria-label="Direct link to História de Usuário:" title="Direct link to História de Usuário:" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero configurar meu dashboard com métricas e indicadores relevantes para meu negócio, para que eu possa monitorar a performance e tomar decisões baseadas em dados.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência">Fluxo de Uso (Diagrama de Sequência):<a href="#fluxo-de-uso-diagrama-de-sequência" class="hash-link" aria-label="Direct link to Fluxo de Uso (Diagrama de Sequência):" title="Direct link to Fluxo de Uso (Diagrama de Sequência):" translate="no">​</a></h4>
+<ol>
+<li>👤 Dono acessa a seção &quot;Configurações do Dashboard&quot; no 💻 Painel</li>
+<li>💻 Painel solicita configurações atuais via <code> GET /tenants/{tenant_id}/dashboard</code></li>
+<li>💻 Painel exibe widgets disponíveis e configurações atuais</li>
+<li>👤 Dono seleciona widgets de interesse (ocupação, taxa de conversão, cancelamentos)</li>
+<li>👤 Dono define período padrão de visualização e alertas desejados</li>
+<li>💻 Painel envia requisição <code>PUT /tenants/{tenant_id}/dashboard</code> para 🌐 API Gateway</li>
+<li>🌐 API Gateway valida JWT e permissões</li>
+<li>🌐 API Gateway encaminha para serviço de Analytics</li>
+<li>Serviço salva preferências do dashboard no 🗄️ PostgreSQL</li>
+<li>Serviço configura alertas solicitados e thresholds no ⚡ Redis</li>
+<li>🌐 API Gateway retorna confirmação</li>
+<li>💻 Painel recarrega dashboard com novas configurações</li>
+<li>⏰ Scheduler inicia coleta periódica de métricas conforme configuração</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-5">Critérios de Aceitação:<a href="#critérios-de-aceitação-5" class="hash-link" aria-label="Direct link to Critérios de Aceitação:" title="Direct link to Critérios de Aceitação:" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir seleção de widgets e métricas para o dashboard personalizado</li>
+<li>Deve garantir que as configurações sejam persistidas por tenant</li>
+<li>Deve oferecer opções de periodicidade (diário, semanal, mensal) para análises</li>
+<li>Deve permitir configuração de alertas para métricas críticas</li>
+<li>Deve calcular e exibir corretamente os dados conforme configuração</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-5">Definition of Done:<a href="#definition-of-done-5" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<ul>
+<li>Interface de configuração do dashboard implementada</li>
+<li>Biblioteca de widgets e visualizações implementada</li>
+<li>Persistência de preferências de usuário configurada</li>
+<li>Sistemas de alertas implementados</li>
+<li>Documentação de métricas disponíveis concluída</li>
+<li>Testes de cálculo e exibição de dados realizados</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-7---configuração-de-níveis-de-acesso-opcional">Fluxo 7 - Configuração de Níveis de Acesso (Opcional)<a href="#fluxo-7---configuração-de-níveis-de-acesso-opcional" class="hash-link" aria-label="Direct link to Fluxo 7 - Configuração de Níveis de Acesso (Opcional)" title="Direct link to Fluxo 7 - Configuração de Níveis de Acesso (Opcional)" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento
+Canal: WebApp
+Frequência: Pós-setup inicial
+Objetivo: Gestão de permissões da equipe</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-gestão-de-permissões-da-equipe">Título: Gestão de Permissões da Equipe<a href="#título-gestão-de-permissões-da-equipe" class="hash-link" aria-label="Direct link to Título: Gestão de Permissões da Equipe" title="Direct link to Título: Gestão de Permissões da Equipe" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQMUDARPERMISSOES" src="/projeto_agendamento/assets/images/SEQ-MudarPermissoes-c523647869338b4b3e77eb636888e270.png" width="4325" height="2828" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-6">História de Usuário:<a href="#história-de-usuário-6" class="hash-link" aria-label="Direct link to História de Usuário:" title="Direct link to História de Usuário:" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero definir níveis de acesso para meus funcionários no sistema, para que cada um tenha acesso apenas às funcionalidades necessárias para seu papel, mantendo a segurança dos dados.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-1">Fluxo de Uso (Diagrama de Sequência):<a href="#fluxo-de-uso-diagrama-de-sequência-1" class="hash-link" aria-label="Direct link to Fluxo de Uso (Diagrama de Sequência):" title="Direct link to Fluxo de Uso (Diagrama de Sequência):" translate="no">​</a></h4>
+<ol>
+<li>👤 Dono acessa seção &quot;Gerenciamento de Acesso&quot; no 💻 Painel</li>
+<li>💻 Painel solicita lista de usuários via GET /users a 🌐 API Gateway</li>
+<li>💻 Painel exibe lista de usuários/funcionários e seus níveis de acesso atuais</li>
+<li>👤 Dono seleciona funcionário para configurar permissões</li>
+<li>💻 Painel exibe matriz de permissões disponíveis (OWNER, STAFF)</li>
+<li>👤 Dono seleciona permissões específicas ou papel pré-definido</li>
+<li>👤 Dono clica em &quot;Salvar&quot;</li>
+<li>💻 Painel envia requisição <code>PUT /users/{user_id}/</code>permissions para 🌐 API Gateway</li>
+<li>🌐 API Gateway valida JWT e permissões do dono</li>
+<li>🌐 API Gateway valida solicitação (não pode remover último OWNER)</li>
+<li>🌐 API Gateway atualiza permissões na tabela users do 🗄️ PostgreSQL</li>
+<li>🌐 API Gateway adiciona tokens do usuário à blacklist no ⚡ Redis</li>
+<li>🌐 API Gateway publica evento user.permissions.updated na 📨 Fila/EventBus</li>
+<li>💻 Painel exibe lista atualizada com novas permissões</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-6">Critérios de Aceitação:<a href="#critérios-de-aceitação-6" class="hash-link" aria-label="Direct link to Critérios de Aceitação:" title="Direct link to Critérios de Aceitação:" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir definir permissões granulares ou papéis pré-definidos (OWNER, STAFF)</li>
+<li>Deve garantir que sempre exista pelo menos um usuário com papel OWNER</li>
+<li>Deve revogar tokens ativos quando permissões são alteradas</li>
+<li>Deve registrar alterações de permissões no audit_log</li>
+<li>Deve atualizar imediatamente o acesso após alterações</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-6">Definition of Done:<a href="#definition-of-done-6" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<ul>
+<li>Interface de gerenciamento de permissões implementada</li>
+<li>Regras de validação e segurança implementadas</li>
+<li>Revogação de tokens configurada</li>
+<li>Auditoria de mudanças de permissões implementada</li>
+<li>Testes de segurança e autorização realizados</li>
+<li>Documentação de papéis e permissões concluída</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-8---teste-e-validação-do-sistema-opcional">Fluxo 8 - Teste e Validação do Sistema (Opcional)<a href="#fluxo-8---teste-e-validação-do-sistema-opcional" class="hash-link" aria-label="Direct link to Fluxo 8 - Teste e Validação do Sistema (Opcional)" title="Direct link to Fluxo 8 - Teste e Validação do Sistema (Opcional)" translate="no">​</a></h3>
+<blockquote>
+<p>Persona: Dono do Estabelecimento
+Canal: WebApp
+Frequência: Pós-setup inicial
+Objetivo: Verificação operacional pré-lançamento</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="título-verificação-operacional-pré-lançamento">Título: Verificação Operacional Pré-lançamento<a href="#título-verificação-operacional-pré-lançamento" class="hash-link" aria-label="Direct link to Título: Verificação Operacional Pré-lançamento" title="Direct link to Título: Verificação Operacional Pré-lançamento" translate="no">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="SEQTESTESADMIN" src="/projeto_agendamento/assets/images/SEQ-TestesAdmin-1cf08ea547710adda20052a54233fd0e.png" width="6333" height="5192" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="história-de-usuário-7">História de Usuário:<a href="#história-de-usuário-7" class="hash-link" aria-label="Direct link to História de Usuário:" title="Direct link to História de Usuário:" translate="no">​</a></h4>
+<p>Como dono do estabelecimento, quero testar e validar todas as configurações antes do lançamento, para garantir que o sistema funcione corretamente e evitar problemas quando clientes reais começarem a utilizá-lo.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fluxo-de-uso-diagrama-de-sequência-2">Fluxo de Uso (Diagrama de Sequência):<a href="#fluxo-de-uso-diagrama-de-sequência-2" class="hash-link" aria-label="Direct link to Fluxo de Uso (Diagrama de Sequência):" title="Direct link to Fluxo de Uso (Diagrama de Sequência):" translate="no">​</a></h4>
+<ol>
+<li>👤 Dono acessa seção &quot;Teste do Sistema&quot; no 💻 Painel</li>
+<li>💻 Painel apresenta opções de teste (Agendamento, Notificações, Fluxo completo)</li>
+<li>👤 Dono seleciona &quot;Simular Agendamento&quot;</li>
+<li>💻 Painel envia requisição POST /system/test-mode/enable para 🌐 API Gateway</li>
+<li>🌐 API Gateway ativa flag de teste no 🗄️ PostgreSQL e ⚡ Redis</li>
+<li>👤 Dono realiza um agendamento de teste completo via interface simulada</li>
+<li>🌐 API Gateway roteia requisições para ambientes de teste isolados</li>
+<li>📅 Agenda &amp; Booking processa agendamento normalmente, mas marca como &quot;teste&quot;</li>
+<li>🤖 Bot Orchestrator simula respostas de WhatsApp sem enviar mensagens reais</li>
+<li>💻 Painel exibe cada etapa do fluxo e permite validação</li>
+<li>👤 Dono confirma funcionamento ou identifica problemas</li>
+<li>💻 Painel oferece opção de testar notificações</li>
+<li>👤 Dono testa recebimento de mensagens no próprio WhatsApp (apenas números autorizados)</li>
+<li>👤 Dono finaliza testes e desativa &quot;Modo Teste&quot;</li>
+<li>💻 Painel envia requisição <code>POST /tenants/{tenant_id}/validate</code></li>
+<li>🌐 API Gateway coordena verificações em todos os serviços do domínio</li>
+<li>💻 Painel exibe relatório de status de cada componente e confirmação final</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="critérios-de-aceitação-7">Critérios de Aceitação:<a href="#critérios-de-aceitação-7" class="hash-link" aria-label="Direct link to Critérios de Aceitação:" title="Direct link to Critérios de Aceitação:" translate="no">​</a></h4>
+<ul>
+<li>Deve permitir simulação de agendamento completo em ambiente isolado</li>
+<li>Deve testar envio de notificações apenas para números autorizados (dono/equipe)</li>
+<li>Deve validar automaticamente configurações críticas e identificar problemas</li>
+<li>Deve gerar relatório detalhado de teste com status de cada componente</li>
+<li>Deve fornecer recomendações de correção para problemas identificados</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="definition-of-done-7">Definition of Done:<a href="#definition-of-done-7" class="hash-link" aria-label="Direct link to Definition of Done:" title="Direct link to Definition of Done:" translate="no">​</a></h4>
+<ul>
+<li>Modo de teste implementado com isolamento de dados reais</li>
+<li>Interface de simulação de agendamento implementada</li>
+<li>Sistema de validação automática implementado</li>
+<li>Testes de notificações com sandbox configurados</li>
+<li>Geração de relatório de prontidão implementada</li>
+<li>Documentação de troubleshooting e FAQ concluída</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guia_tecnico/fluxos/fluxos_configuracao.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/projeto_agendamento/docs/guia_tecnico/fluxos/visao_geral_fluxos"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Visão Geral dos Fluxos</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/projeto_agendamento/docs/guia_tecnico/fluxos/fluxos_cliente"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Fluxos do Cliente</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-índice-de-fluxos" class="table-of-contents__link toc-highlight">📑 Índice de Fluxos</a><ul><li><a href="#fluxos-essenciais-mvp" class="table-of-contents__link toc-highlight">Fluxos Essenciais (MVP)</a></li><li><a href="#fluxos-opcionais" class="table-of-contents__link toc-highlight">Fluxos Opcionais</a></li></ul></li><li><a href="#fluxos-essenciais-mvp-1" class="table-of-contents__link toc-highlight">Fluxos Essenciais (MVP)</a><ul><li><a href="#fluxo-1---login-do-dono-na-webapp" class="table-of-contents__link toc-highlight">Fluxo 1 - Login do Dono na WebApp</a></li><li><a href="#fluxo-2---cadastro-de-serviços" class="table-of-contents__link toc-highlight">Fluxo 2 - Cadastro de Serviços</a></li><li><a href="#fluxo-3---cadastro-de-funcionários-e-turnos" class="table-of-contents__link toc-highlight">Fluxo 3 - Cadastro de Funcionários e Turnos</a></li><li><a href="#fluxo-4---vinculação-de-serviços-aos-funcionários" class="table-of-contents__link toc-highlight">Fluxo 4 - Vinculação de Serviços aos Funcionários</a></li><li><a href="#fluxo-5---finalização-da-configuração" class="table-of-contents__link toc-highlight">Fluxo 5 - Finalização da Configuração</a></li></ul></li><li><a href="#fluxos-opcionais-1" class="table-of-contents__link toc-highlight">Fluxos Opcionais</a><ul><li><a href="#fluxo-6---configuração-de-dashboard-e-métricas-opcional" class="table-of-contents__link toc-highlight">Fluxo 6 - Configuração de Dashboard e Métricas (Opcional)</a></li><li><a href="#fluxo-7---configuração-de-níveis-de-acesso-opcional" class="table-of-contents__link toc-highlight">Fluxo 7 - Configuração de Níveis de Acesso (Opcional)</a></li><li><a href="#fluxo-8---teste-e-validação-do-sistema-opcional" class="table-of-contents__link toc-highlight">Fluxo 8 - Teste e Validação do Sistema (Opcional)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/projeto_agendamento/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/projeto_agendamento/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
