@@ -1,0 +1,8 @@
+{
+  "label": "Operações",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Procedimentos e melhores práticas para manter o sistema funcionando eficientemente em produção."
+  }
+}

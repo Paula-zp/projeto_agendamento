@@ -1,0 +1,8 @@
+{
+  "label": "Glossário",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Referência de termos técnicos e de negócio utilizados no contexto do sistema."
+  }
+}

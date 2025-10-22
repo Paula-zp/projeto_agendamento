@@ -1,0 +1,8 @@
+{
+  "label": "Arquitetura",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Visão técnica da estrutura, componentes, padrões e decisões de design do sistema."
+  }
+}

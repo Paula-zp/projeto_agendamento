@@ -1,0 +1,8 @@
+{
+    "label": "Produto",
+    "position": 3,
+    "link": {
+    "type": "generated-index",
+    "description": "Descrição detalhada das funcionalidades, recursos e benefícios do produto."
+    }
+}
