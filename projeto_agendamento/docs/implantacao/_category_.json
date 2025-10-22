@@ -1,0 +1,8 @@
+{
+  "label": "Implantação",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description":"Orientações e práticas recomendadas para o deploy do sistema em ambientes de sandbox e produção."
+  }
+}
