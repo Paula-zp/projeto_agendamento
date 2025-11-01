@@ -8,7 +8,7 @@ A plataforma é um sistema de gerenciamento de reservas e atendimentos que atua 
 
 Seu objetivo é organizar e automatizar o fluxo de atendimento de forma simples, prática e eficiente.
 
-## O que é:
+## O que o produto é:
 - Uma **plataforma de gerenciamento de reservas (intermédio)**.  
 - Gerencia o **fluxo completo de atendimento**: do agendamento à confirmação.  
 - Gerencia os **serviços ofertados** pelo prestador, permitindo controle de disponibilidade e agenda.
