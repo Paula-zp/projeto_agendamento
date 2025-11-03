@@ -8,7 +8,7 @@
 - [ ] 🏗️ Arquitetura (mudanças estruturais)
 
 #### 📝 Descrição
-> Descreva o que foi alterado e por quê
+> Descreva o que foi alterado e o motivo
 
 #### 💡 Motivação e Benefícios
 
