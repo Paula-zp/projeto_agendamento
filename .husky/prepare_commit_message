@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Bloqueia commits que não vêm do commitizen
+if [ -z "$COMMITIZEN" ]; then
+    echo "❌ Commits diretos não permitidos!"
+    echo "👉 Use: npm run commit"
+    exit 1
+fi
