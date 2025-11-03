@@ -5,6 +5,7 @@ sidebar_position: 1
 # Produto Agendamento
 
 #### Estrutura de Abas Principais
+Exemplos de alocação de conteúdo para as principais abas da documentação do projeto:
 
 1. **Introdução**
   - Overview do projeto
