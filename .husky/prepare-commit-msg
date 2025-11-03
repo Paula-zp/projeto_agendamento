@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+if [ -z "$COMMITIZEN" ]; then
+  echo ""
+  echo "❌ Commits diretos não são permitidos!"
+  echo "👉 Use: npm run commit"
+  echo ""
+  exit 1
+fi
